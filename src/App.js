@@ -1,7 +1,8 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef } from 'react';
 import { Plus, Edit2, Trash2, Clock, FolderOpen, Download, Upload } from 'lucide-react';
+import './App.css';
 
-const DailyScheduleWatch = () => {
+const App = () => {
   const [activities, setActivities] = useState([]);
   const [showAddForm, setShowAddForm] = useState(false);
   const [editingActivity, setEditingActivity] = useState(null);
@@ -126,7 +127,6 @@ const DailyScheduleWatch = () => {
     link.href = url;
     link.download = `schedule-${currentDate}-${dayName.toLowerCase()}.json`;
     
-    // Set the suggested directory in the filename (browsers will remember the last used directory)
     link.setAttribute('download', `schedule-${currentDate}-${dayName.toLowerCase()}.json`);
     
     document.body.appendChild(link);
@@ -134,7 +134,6 @@ const DailyScheduleWatch = () => {
     document.body.removeChild(link);
     URL.revokeObjectURL(url);
     
-    // Show success message with organization tip
     alert(`Schedule saved as: schedule-${currentDate}-${dayName.toLowerCase()}.json\n\nTip: Create a 'schedule' folder to organize your schedule files!`);
   };
 
@@ -148,7 +147,6 @@ const DailyScheduleWatch = () => {
           const scheduleData = JSON.parse(e.target.result);
           
           if (scheduleData.activities && Array.isArray(scheduleData.activities)) {
-            // Validate activity structure
             const validActivities = scheduleData.activities.filter(activity => 
               activity.name && 
               typeof activity.startTime === 'number' && 
@@ -173,17 +171,15 @@ const DailyScheduleWatch = () => {
       reader.readAsText(file);
     }
     
-    // Reset file input
     if (fileInputRef.current) {
       fileInputRef.current.value = '';
     }
     setShowImportExport(false);
   };
 
-  // Trigger file picker with directory suggestion
+  // Trigger file picker
   const triggerFileImport = () => {
     if (fileInputRef.current) {
-      // The browser will remember the last used directory
       fileInputRef.current.click();
     }
   };
@@ -543,4 +539,4 @@ const DailyScheduleWatch = () => {
   );
 };
 
-export default DailyScheduleWatch;
+export default App;
