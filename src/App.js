@@ -1,7 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { Plus, Edit2, Trash2, Clock, FolderOpen, Download, Upload } from 'lucide-react';
-import DailyScheduleWatch from './DailyScheduleWatch';
-import './App.css';
 
 const DailyScheduleWatch = () => {
   const [activities, setActivities] = useState([]);
