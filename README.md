@@ -1,70 +1,133 @@
-# Getting Started with Create React App
+# Daily Schedule Watch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<img width="1431" height="770" alt="image" src="https://github.com/user-attachments/assets/63733f94-5b7d-42fb-ab67-b5018fedceac" />
 
-## Available Scripts
 
-In the project directory, you can run:
+> A lightweight and responsive daily schedule management web app built with React and TailwindCSS. Easily create, view, and manage your daily tasks.
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🔹 Project Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Daily Schedule Watch is a simple and intuitive web application for managing daily tasks. Users can quickly add, edit, or delete tasks and view them organized by time slots. The project focuses on a clean and visually appealing UI while leveraging modern frontend technologies for high performance and a smooth user experience.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🚀 Features
 
-### `npm run build`
+- Add, edit, and delete daily tasks
+- View tasks by time slots for quick overview
+- Responsive design for desktop and mobile
+- Clean and elegant UI using TailwindCSS with custom themes
+- Deployed on Netlify for online access
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠 Tech Stack
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Frontend Framework**: React 18  
+- **Styling**: TailwindCSS  
+- **Build Tool**: Vite  
+- **Version Control**: Git & GitHub  
+- **Deployment**: Netlify  
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 📂 Project Structure
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+daily-schedule-watch/
+├─ public/
+├─ src/
+│  ├─ components/        # React components
+│  ├─ pages/             # Page components
+│  ├─ App.jsx
+│  └─ main.jsx
+├─ tailwind.config.js    # TailwindCSS configuration
+├─ postcss.config.js     # PostCSS configuration
+├─ package.json
+└─ README.md
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+````
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## ⚙️ Installation & Running Locally
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+1. Clone the repository:
+```bash
+git clone https://github.com/WilsonWukz/daily-schedule-watch.git
+cd daily-schedule-watch
+````
 
-### Code Splitting
+2. Install dependencies:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+npm install
+```
 
-### Analyzing the Bundle Size
+3. Start development server:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```bash
+npm run dev
+```
 
-### Making a Progressive Web App
+Open your browser at [http://localhost:5173](http://localhost:5173)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+4. Build production version:
 
-### Advanced Configuration
+```bash
+npm run build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+5. Preview production build locally:
 
-### Deployment
+```bash
+npm install -g serve
+serve -s build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
+## 🌐 Live Demo
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Check out the deployed version on Netlify:
+
+[https://daily-schedule-watch-wsn.netlify.app/](https://daily-schedule-watch-wsn.netlify.app/)
+
+---
+
+## 🎨 Screenshots
+
+<img width="1625" height="998" alt="image" src="https://github.com/user-attachments/assets/acf3aeb8-f75e-4a9c-a6ff-83b464c08d44" />
+<img width="1484" height="890" alt="image" src="https://github.com/user-attachments/assets/c7ec3fe6-5b9e-4e66-abc5-ea85f582e509" />
+<img width="1511" height="930" alt="image" src="https://github.com/user-attachments/assets/8616b65f-5a65-43a6-b67d-88871dea28e2" />
+
+
+---
+
+## 📈 Future Plans
+
+* Add task categories and priority levels
+* Support recurring daily/weekly tasks
+* Implement user login and cloud sync
+* Add PWA support for mobile users
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork this repository
+2. Create a new branch (`git checkout -b feature/YourFeature`)
+3. Commit your changes (`git commit -m 'Add some feature'`)
+4. Push to the branch (`git push origin feature/YourFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+MIT License © 2025 Wilson Wu
